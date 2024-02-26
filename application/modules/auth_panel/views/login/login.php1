@@ -1,0 +1,68 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+?>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="Mosaddek">
+        <meta name="keyword" content="FlatLab, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+        <link rel="shortcut icon" href="<?= base_url('auth_panel_assets/img/favicon.ico') ?>">
+
+        <title><?= CONFIG_PROJECT_NICK_NAME ?> ADMIN LOGIN</title>
+
+        <!-- Bootstrap core CSS auth_panel_assets -->
+        <link href="<?php echo base_url(); ?>auth_panel_assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="<?php echo base_url(); ?>auth_panel_assets/css/bootstrap-reset.css" rel="stylesheet">
+        <!--external css-->
+        <link href="<?php echo base_url(); ?>auth_panel_assets/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+        <!-- Custom styles for this template -->
+        <link href="<?php echo base_url(); ?>auth_panel_assets/css/style.css?a" rel="stylesheet">
+        <link href="<?php echo base_url(); ?>auth_panel_assets/css/style-responsive.css" rel="stylesheet" />
+
+        <style>
+            body{
+                background-image: url(<?php echo base_url(); ?>auth_panel_assets/img/login_background.png);
+                background-size: 100%;
+            }
+
+            .btnRefresh{
+                background-color:black;
+                border:0;
+                padding:7px 10px;
+                color:#FFF;
+                float:right;
+            }
+
+        </style>
+        <!-- js placed at the end of the document so the pages load faster -->
+        <script src="<?php echo base_url(); ?>auth_panel_assets/js/jquery.js"></script>
+        <script src="<?php echo base_url(); ?>auth_panel_assets/js/bootstrap.min.js"></script>
+    </head>
+
+    <body class="login-body">
+        <form class="form-signin" method="POST" action="<?php echo base_url('auth_panel/login/index?return='.$full_url); ?>">
+            <h2 class="form-signin-heading bold"><?= CONFIG_PROJECT_FULL_NAME ?> Classes Admin</h2>
+            <div class="login-wrap">
+                <input type="text" autocomplete="off" class="form-control" value="<?php echo set_value('email') ?>" name="email" placeholder="Email" id="login_username">
+                <span class="error bold"><?php echo form_error('email'); ?></span>
+                <input type="password" autocomplete="off" class="form-control" name="password" placeholder="Password" id="login_pwd">
+                <span class="error bold"><?php echo form_error('password'); ?></span>
+                <input style="width: 50%;float: left;margin-bottom: 0px;" class="form-control" autocomplete="off" name="captcha" placeholder="Type here" type="text" />
+                <div style="width: 45%;margin-left: 5%;margin-bottom: 6px;float: left;">
+                    <button type="button" class="btnRefresh" onClick="refreshCaptcha();"><i class="fa fa-spinner"></i></button>
+                    <img id="captcha_code" src="<?= base_url() . "auth_panel/login/captcha"; ?>" />
+                </div>
+                <span>*Enter the text as shown in image</span>
+                <span class="error bold"><?= (isset($error)) ? $error : "" ?></span>
+                <button class="btn btn-lg btn-login btn-block mt-3" type="submit">Sign in</button>
+            </div>
+        </form>
+        <script>
+            function refreshCaptcha() {
+                $("#captcha_code").attr('src', $("#captcha_code").attr('src'));
+            }
+        </script>
+</html>

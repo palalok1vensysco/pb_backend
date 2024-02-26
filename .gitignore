@@ -1,0 +1,28 @@
+# ignore files
+application/logs/
+application/config/
+application/third_party/
+phpmyadmin/
+system/
+auth_panel_assets/
+uploads/
+tmp/
+*.yml
+*.zip
+*.bk
+*.old
+
+# Applications
+*.app
+*.exe
+*.war
+
+# Large media files
+*.mp4
+*.tiff
+*.avi
+*.flv
+*.mov
+*.wmv
+.htaccess
+

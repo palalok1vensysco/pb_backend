@@ -1,0 +1,144 @@
+
+.member_table td {
+  border: none !important;
+  color: #fff
+}
+
+.member_table th {
+  border: none !important;
+  color: #fff
+}
+
+.f12 {
+  font-size: 12px;
+}
+
+.botm_price {
+  background: #787878;
+  border-radius: 2px;
+  color: #fff;
+  padding: 4px 35px;
+  margin: 2px;
+}
+
+.price_member {
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.radio_member {
+  height: 22px !important;
+  width: auto !important;
+  position: absolute;
+}
+
+.white {
+  color: #fff
+}
+
+.pay_now {
+  background: #ff3333;
+  padding: 10px 90px;
+  color: #fff;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+.rmbg {
+  background: #30333a;
+}
+
+.bg_clr_price {
+  border: 2px solid #1a1a1a;
+  border-radius: 10px;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+  transition: transform .25s cubic-bezier(0.33, 0.04, 0.63, 0.93), -webkit-transform .25s cubic-bezier(0.33, 0.04, 0.63, 0.93), -o-transform .25s cubic-bezier(0.33, 0.04, 0.63, 0.93);
+}
+
+.des_prc_txt h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.title_price h4 {
+  background: #1a1a1a;
+  padding: 10px;
+  width: max-content;
+  border-radius: 6px;
+  margin-top: -37px;
+  font-size: 16px;
+  color: #878787;
+  border: 2px solid #323232;
+}
+
+.prc_section h2 {
+  font-size: 20px;
+  color: #878787;
+}
+
+.bg_clr_price{background: #1a1a1a}
+.bg_clr_price ul li {
+  list-style: none;
+  padding: 10px 12px;
+  border-bottom: 1px solid #1a1a1a;
+  color: #878787;
+}
+
+.bg_clr_price ul {
+  padding-inline-start: 0px;
+}
+
+.price_cst_btn {
+  background: #808080;
+  color: #fff;
+  border-radius: 4px;
+  padding: 4px 20px;
+  border: none;
+}
+
+.price_cst_btn:hover {
+  background: green;
+  color: #fff;
+  border: none;
+}
+
+.price_bt_dv {
+  text-align: center;
+}
+
+.purchased_bt{color: #fff !important; cursor: inherit !important; background: green !important}
+
+.active_bg_clr{ border: 2px solid #fff;}
+.active_bg_clr .title_price h4 {
+    border: 2px solid #fff;
+}
+
+.bg_clr_price:hover {
+  /*transform: scale3d(1.1, 1.1, 1);*/
+ /* background: #fff;
+  box-shadow: 8px 8px 14px #25222a, -8px -8px 14px #33303c;*/
+  border: 2px solid #fff;
+}
+
+.bg_clr_price:hover .title_price h4 {
+  border: 2px solid #fff;
+}
+
+
+.des_prc_txt h1 {
+  color: #878787;
+}
+
+.des_prc_txt h6 {
+  color: #878787;
+}
+
+.big_txt {
+   background: -webkit-linear-gradient(45deg, #ffffff, #808080);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-size: 35px;
+}
+
+

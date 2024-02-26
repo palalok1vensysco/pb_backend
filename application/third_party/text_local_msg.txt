@@ -1,0 +1,19 @@
+
+
+MzA0MzYzNDgzMzQyNDQ3MTQ3NTQ2ZDQ4NjM3MDc1Nzc=
+
+https://api.textlocal.in/send/?apiKey=MzA0MzYzNDgzMzQyNDQ3MTQ3NTQ2ZDQ4NjM3MDc1Nzc=&sender=MVFPLR&numbers=919423583915&message=Hello ALOK, 249676 is your OTP for MVFPlayer Admin Login. Please Do not share your OTP. From MVF Team
+
+Hello ALOK, 249676 is your OTP for MVFPlayer Admin Login. Please Do not share your OTP. From MVF Team
+
+
+CREATE USER 'yeshu_tv'@'localhost' IDENTIFIED BY 'Yeshu_123';
+
+mysqlsh -u yeshu_tv -p -h 35.154.212.120 -P 3306 -D Yeshu_TV --sql
+
+GRANT ALL PRIVILEGES ON * . * TO 'yeshu_tv'@'localhost';
+
+sudo adduser sftp_web
+sudo chown sammyfiles:sftp_web /var/sftp/uploads
+
+
